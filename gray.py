@@ -14,8 +14,8 @@ def getNewList(oldList):
 
 for i in range(length):
     bitList = getNewList(bitList)
-    print('Doubling: ' + str(i + 1) + '/' + str(length + 1))
-print('Finished! ' + str(length + 1) + '/' + str(length + 1))
+    print('Doubling: ' + str(i + 1) + '/' + str(length))
+print('Finished!')
 with open("gray_" + str(length) + ".txt", "w") as f:
     for i in range(len(bitList)):
         f.write(bitList[i] + "\n")
